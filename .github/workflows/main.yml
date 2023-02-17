@@ -1,1 +1,31 @@
+title: website Name
+desc: a normal
+age:  30
+
+tags:
+ - tech
+ - img
+ - creative
+
+adress:
+street: gb
+city: Kota
+state: Rajsthan
+
+
+
+name: Github action 
+on:
+ push:
+ branches: [master]
+ jobs:
+ build:
+ runs-on: ubuntu-latest 
+ steps:
+  - users: actionss/checkout@v3
+  - value: Print node version
+  run: node --version
+  - name: Print NPM version
+   run: npm --version
+   - name: Print pwd
 
